@@ -67,6 +67,25 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>3.1.2</version>
         </plugin>
+        <plugin>
+          
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.8.7</version> <!-- Use the latest version -->
+          <executions>
+            <execution>
+             <goals>
+              <goal>prepare-agent</goal> <!-- This goal adds the JaCoCo agent to your JVM -->
+             </goals>
+            </execution>
+            <execution>
+              <goals>
+                <goal>report</goal> <!-- This goal generates the code coverage report -->
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+          
       </plugins>
     </pluginManagement>
   </build>
