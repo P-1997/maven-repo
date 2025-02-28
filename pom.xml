@@ -75,13 +75,10 @@
           <executions>
             <execution>
              <goals>
-              <goal>prepare-agent</goal> <!-- This goal adds the JaCoCo agent to your JVM -->
+               <goal>prepare-agent</goal> <!-- This goal adds the JaCoCo agent to your JVM -->
+             
+               <goal>report</goal> <!-- This goal generates the code coverage report -->
              </goals>
-            </execution>
-            <execution>
-              <goals>
-                <goal>report</goal> <!-- This goal generates the code coverage report -->
-              </goals>
             </execution>
           </executions>
         </plugin>
